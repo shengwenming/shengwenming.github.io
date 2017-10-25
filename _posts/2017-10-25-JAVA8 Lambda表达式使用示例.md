@@ -13,7 +13,7 @@ tags:
 ---
 
 
-# 1. 实现Runnable线程案例
+1. 实现Runnable线程案例
 
 使用() -> {} 替代匿名类：
        
@@ -49,7 +49,7 @@ tags:
 
     (int even, int odd) -> even + odd
     
-# 2.实现事件处理
+2.实现事件处理
 如果你曾经做过Swing 编程，你将永远不会忘记编写事件侦听器代码。使用lambda表达式如下所示写出更好的事件侦听器的代码。
 
         // Before Java 8:
@@ -69,7 +69,7 @@ tags:
     
 在java 8中你可以使用Lambda表达式替代丑陋的匿名类。
 
-# 3.使用Lambda表达式遍历List集合
+3.使用Lambda表达式遍历List集合
     //Prior Java 8 :
     List features = Arrays.asList("Lambdas", "Default Method", 
     "Stream API", "Date and Time API");
@@ -95,7 +95,7 @@ tags:
     
 方法引用是使用两个冒号::这个操作符号。
 
-# 4.使用Lambda表达式和函数接口
+4.使用Lambda表达式和函数接口
 
 为了支持函数编程，Java 8加入了一个新的包java.util.function，其中有一个接口java.util.function.Predicate是支持Lambda函数编程：
 
@@ -152,7 +152,7 @@ tags:
      }
 你能看到来自Stream API 的filter方法能够接受 Predicate参数, 能够允许测试多个条件。
 
-# 5.复杂的结合Predicate 使用
+5.复杂的结合Predicate 使用
 java.util.function.Predicate提供and(), or() 和 xor()可以进行逻辑操作，比如为了得到一串字符串中以"J"开头的4个长度：
 
     // We can even combine Predicate using and(), or() And xor() logical functions
@@ -167,7 +167,7 @@ java.util.function.Predicate提供and(), or() 和 xor()可以进行逻辑操作�
                 'J' and four letter long is : " + n));
 其中startsWithJ.and(fourLetterLong)是使用了AND逻辑操作。
 
-# 6.使用Lambda实现Map 和 Reduce
+6.使用Lambda实现Map 和 Reduce
 
 最流行的函数编程概念是map，它允许你改变你的对象，在这个案例中，我们将costBeforeTeax集合中每个元素改变了增加一定的数值，我们将Lambda表达式 x -> x*x传送map()方法，这将应用到stream中所有元素。然后我们使用 forEach() 打印出这个集合的元素.
 
@@ -219,7 +219,7 @@ reduce() 是将集合中所有值结合进一个，Reduce类似SQL语句中的su
     Total : 1680.0
     Total : 1680.0
     
-# 7.通过filtering 创建一个字符串String的集合
+7.通过filtering 创建一个字符串String的集合
 Filtering是对大型Collection操作的一个通用操作，Stream提供filter()方法，接受一个Predicate对象，意味着你能传送lambda表达式作为一个过滤逻辑进入这个方法：
 
     // Create a List with String more than 2 characters
@@ -231,7 +231,7 @@ Filtering是对大型Collection操作的一个通用操作，Stream提供filter(
     Output :
     Original List : [abc, , bcd, , defg, jk], filtered list : [abc, bcd, defg]
     
-# 8.对集合中每个元素应用函数
+8.对集合中每个元素应用函数
 我们经常需要对集合中元素运用一定的功能，如表中的每个元素乘以或除以一个值等等.
 
     // Convert String to Uppercase and join them using coma
@@ -245,7 +245,7 @@ Filtering是对大型Collection操作的一个通用操作，Stream提供filter(
     USA, JAPAN, FRANCE, GERMANY, ITALY, U.K., CANADA
 上面是将字符串转换为大写，然后使用逗号串起来。
 
-# 9.通过复制不同的值创建一个子列表
+9.通过复制不同的值创建一个子列表
 
 使用Stream的distinct()方法过滤集合中重复元素。
 
@@ -260,7 +260,7 @@ Filtering是对大型Collection操作的一个通用操作，Stream提供filter(
     Original List : [9, 10, 3, 4, 7, 3, 4],  Square Without 
                                              duplicates : [81, 100, 9, 16, 49]
                                              
-# 10.计算List中的元素的最大值，最小值，总和及平均值
+10.计算List中的元素的最大值，最小值，总和及平均值
 
     //Get count, min, max, sum, and average for numbers
     List<Integer> primes = Arrays.asList(2, 3, 5, 7, 11, 13, 17, 19, 23, 29);
