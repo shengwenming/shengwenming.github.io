@@ -1,3 +1,17 @@
+---
+layout:     post
+title:      JAVA8 Lambda表达式使用示例
+subtitle:
+date:       2017-10-25
+author:     SWM
+header-img: img/java8-lambda.png
+catalog: true
+tags:
+    - JAVA
+    - Lambda
+
+---
+
 # JAVA8 Lambda表达式使用示例
 ## 1. 实现Runnable线程案例
 
