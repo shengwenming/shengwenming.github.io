@@ -17,7 +17,7 @@ tags:
 
 使用() -> {} 替代匿名类：
        
-        //java 8 之前:
+
     new Thread(new Runnable() {
         @Override
         public void run() {
@@ -25,7 +25,7 @@ tags:
         }
     }).start();
     
-    //Java 8 :
+
     new Thread( () -> System.out.println("In Java8!") ).start();
          
    
