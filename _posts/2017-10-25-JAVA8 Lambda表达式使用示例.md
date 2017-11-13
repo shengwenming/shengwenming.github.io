@@ -70,6 +70,7 @@ tags:
 在java 8中你可以使用Lambda表达式替代丑陋的匿名类。
 
 # 3.使用Lambda表达式遍历List集合
+
     //Prior Java 8 :
     List features = Arrays.asList("Lambdas", "Default Method", 
     "Stream API", "Date and Time API");
@@ -150,6 +151,8 @@ tags:
             .forEach((name) -> {System.out.println(name + " ");
         });
      }
+     
+     
 你能看到来自Stream API 的filter方法能够接受 Predicate参数, 能够允许测试多个条件。
 
 # 5.复杂的结合Predicate 使用
